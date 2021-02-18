@@ -388,6 +388,16 @@ header {
   height: 20px;
 }
 
+/*clients*/
+.clients {
+}
+
+.clients-title {
+  padding-top: 95px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
 /* footer */
 footer {
   background-color: #2f303a;
