@@ -369,11 +369,6 @@ header {
   justify-content: center;
 }
 
-.team-icon {
-  width: 20px;
-  height: 20px;
-}
-
 .team-box {
   display: flex;
   justify-content: center;
@@ -383,9 +378,14 @@ header {
   border-radius: 50%;
   fill: #afb1b8;
 }
-.team-icon:hover {
+.team-box:hover {
   background-color: var(--accent-color);
   fill: #ffffff;
+}
+
+.team-icon {
+  width: 20px;
+  height: 20px;
 }
 
 /* footer */
