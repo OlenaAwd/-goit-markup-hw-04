@@ -36,6 +36,10 @@ h6 {
   padding: 0;
 }
 
+img {
+  display: block;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -69,6 +73,7 @@ a {
 
 /*logo*/
 .logo {
+  margin-right: 93px;
   color: #000000;
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -158,7 +163,7 @@ header {
 
 .link-icon-tel {
   width: 10px;
-  height: 12px;
+  height: 16px;
   fill: currentColor;
   margin-right: 10px;
 }
@@ -255,6 +260,7 @@ header {
 
 .features .features-description {
   margin-right: 30px;
+  margin-top: 10px;
 
   color: var(--primary-text-color);
   font-weight: 400;
@@ -342,8 +348,14 @@ header {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team .team-name {
-  margin-top: 30px;
+.team-card-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.team-name {
   margin-bottom: 10px;
   color: var(--secondary-text-color);
 
@@ -354,16 +366,17 @@ header {
   letter-spacing: 0.03em;
 }
 
-.team .team-profession {
-  padding-bottom: 30px;
+.team-profession {
+  margin-bottom: 16px;
   color: var(--secondary-text-color);
 
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.19px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 }
+
 .list-icon {
   display: flex;
   justify-content: center;
@@ -386,6 +399,10 @@ header {
 .team-icon {
   width: 20px;
   height: 20px;
+}
+
+.icon-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 /*clients*/
@@ -470,14 +487,12 @@ footer {
 }
 
 .footer-container {
+  display: flex;
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-
-  padding-top: 60px;
-  padding-bottom: 20px;
 
   font-weight: 400;
   font-size: 14px;
@@ -485,8 +500,7 @@ footer {
   letter-spacing: 0.03em;
 }
 
-.logo {
-  margin-right: 93px;
+.logo-f {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -498,6 +512,7 @@ footer {
   color: #ffffff;
 }
 address {
+  margin-top: 20px;
   margin-bottom: 9px;
   color: #ffffff;
 }
@@ -516,6 +531,58 @@ address,
 
 .footer-list .item:not(:last-child) {
   margin-bottom: 9px;
+}
+.part1 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.part2 {
+  padding-top: 72px;
+  padding-bottom: 100px;
+  margin-left: 70px;
+}
+
+.footer-title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.sl-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.sl-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.sl-box:hover,
+.sl-box:focus {
+  background-color: var(--accent-color);
+}
+
+.sl-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sl-icon {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
 }
 
 /*Portfolio-page*/
@@ -604,6 +671,10 @@ address,
 .example-card {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+}
+.example-card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .example-card-content {
